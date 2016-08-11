@@ -159,7 +159,7 @@ public class InternalOperationHandler implements OperationHandler {
                         }
                     }
                     MDMServiceAPIUtils.getAppManagementService(tenantId).
-                            installApplicationForDevices(operation, deviceIdentifiers);
+                            installApplicationForDevices(operation, Arrays.asList(deviceIdentifier));
                 }
             }
         } catch (MDMException mdmExce) {
